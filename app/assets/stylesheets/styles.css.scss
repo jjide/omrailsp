@@ -2,16 +2,65 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$baseFontFamily: 'Open Sans';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$btnPrimaryBackground: orange;
+$linkColor: #A17202;
+
 @import 'bootstrap';
-body{
-	padding-top:60px;}
+html, body{
+	height:100%;}
 
 @import 'bootstrap-responsive';
+#wrap {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -60px;
+}
+#wrap > .container{
+	padding-top:60px;
+	width:950px;
+}
 
-.footer{
-	margin-top:50px;
-	color:$grayLight;
-	a{
-		color: $gray;
-	}
+.brand:hover{
+	color:#ffc700;
+}
+
+.jumbotron{
+	text-align:center;
+	border-bottom:1px solid #e3e3e3;
+}
+.jumbotron h1{
+	font-size:90px;
+	line-height:1em;
+
+}
+.btn{
+	background-image:none;
+	text-shadow: none;
+	border:none;
+	color:#333;
+}
+
+.btn:hover{
+	color:#333;
+}
+
+.navbar-inner{
+	border-bottom:0;
+	background-color:#e3e3e3;
+}
+
+.container .credit{
+	margin:20px 0;
+}
+
+#push, #footer {
+height: 60px;
+}
+
+#footer{
+	background-color:#e3e3e3;
 }

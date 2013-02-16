@@ -1,6 +1,18 @@
+<% if user_signed_in? %>
 
-<h1>Welcome to One Month Rails</h1>
-<p>Homepage for One Month Rails application</p>
-<p><%= link_to "one Month Rails", "#"%></p>
-<p><a href="#"> Sign up now</a></p>
-	
+<div class="jumbotron">
+<h1>You are IN!!!</h1>
+<p class="lead">Thank you for signing up</p><br/>
+
+</div>
+
+<% else %>
+
+<div class="jumbotron">
+<h1>Welcome to One <br/> Month Rails</h1>
+<p class="lead">Homepage for One Month Rails learning application</p><br/>
+<p><%= link_to "Sign up now", new_user_registration_path, class: "btn btn-large btn-primary" %></p>
+
+</div>	
+
+<% end %>

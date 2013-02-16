@@ -58,5 +58,8 @@ module Omrailsp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Required by devise for use on Heroku - can be removed if elsewhere
+    config.assets.initialize_on_precompile = false
   end
 end
