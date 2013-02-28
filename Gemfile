@@ -6,7 +6,6 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 3.0"
 
-gem 'sqlite3'
 
 group :development do
   gem 'sqlite3'
