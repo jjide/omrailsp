@@ -1,0 +1,46 @@
+
+	<h2>My Profile</h2>
+<div class="row show-grid">
+	<div class=" profile span3">
+		
+		
+				</br>
+			<div class="profile_img">
+				
+			</div>
+				</br>
+			<div class="row">
+				<div class="span1.5">
+					<p>Images Added: </p>
+					<p>Views:</p>
+					<p>Contact:</p>
+				</div>
+				<div class="span1">
+					<p><%= current_user.pins.count %> </p>
+					<p>locked</p>
+					<p class="muted"><%= current_user.email %></p>
+				</div>
+			</div>
+<br/>
+<%= link_to 'ADD NEW IMAGE', new_pin_path, class:"btn btn-primary" %>
+
+<br/><br/>
+
+		
+		
+		
+		
+	</div>
+	
+	<div class="span6">
+		
+		
+		<%= render @pins %>
+	</div>
+</div>
+
+
+
+
+
+

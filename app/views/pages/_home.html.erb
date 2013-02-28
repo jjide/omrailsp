@@ -1,9 +1,10 @@
 <% unless user_signed_in? %>
 
 <div class="jumbotron">
-<h1>Welcome to One <br/> Month Rails</h1>
-<p class="lead">Homepage for One Month Rails learning application</p><br/>
-<p><%= link_to "Sign up now", new_user_registration_path, class: "btn btn-large btn-primary" %></p>
+<h1>Welcome to Image Share</h1>
+<p class="lead muted">A place to share your images with others</p><br/>
+<p><%= link_to "LOGIN", new_user_session_path, class:"btn btn-large btn-success" %> or
+<%= link_to "Join Now", new_user_registration_path, class: "btn btn-large btn-primary" %></p>
 
 </div>	
 

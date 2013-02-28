@@ -33,7 +33,7 @@ margin: 0 auto -60px;
 	border-bottom:1px solid #e3e3e3;
 }
 .jumbotron h1{
-	font-size:90px;
+	font-size:70px;
 	line-height:1em;
 
 }
@@ -65,6 +65,17 @@ height: 60px;
 	background-color:#e3e3e3;
 }
 
+.profile{
+	background-color:#E9E9E9;
+	padding-left:50px;
+	padding-top:5px;
+}
+.profile_img{
+	height:200px;
+	width:200px;
+	background-color:#3c3c3c;
+}
+
 /* JQuery Masonry */
 
 .box {
@@ -90,4 +101,12 @@ height: 60px;
 
 .description{
 	margin:10px 5px;
+}
+
+.row{
+/*	border: 1px solid red !important;*/
+}
+
+.offset3{
+	border: 1px solid red !important;
 }

@@ -7,6 +7,9 @@ Omrailsp::Application.routes.draw do
   root :to => 'pins#index'
   
   get 'about' => "pages#about"
+  
+  get 'profile' => 'pins#profile', :as => :profile
+  
    
   # The priority is based upon order of creation:
   # first created -> highest priority.

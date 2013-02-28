@@ -1,5 +1,26 @@
 <div class="row">
-	<div class="span6 offset3">
+	<div class="profile span3">
+		<h4><%= @pin.user.name %> Profile</h4>
+		<div class="profile_img"></div>
+		</br>
+		<div class="row">
+			<div class="span1.5">
+				<p>Images Added: </p>
+				<p>Views:</p>
+				<p>Contact:</p>
+				</div>
+				<div class="span1">
+				<p>3 </p>
+				<p>100</p>
+				<p class="muted"><%= @pin.user.email %></p>
+					</div>
+		</div>
+		
+		
+		
+	</div>
+	
+	<div class="span6">
 		<div class="well">
 		
 		<%= image_tag @pin.image %>

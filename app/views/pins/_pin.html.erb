@@ -2,7 +2,7 @@
 <%= link_to (image_tag pin.image(:thumb)), pin %>
 
 <p class="description"><%= pin.description %></p>
-<p class="description">Posted by: <strong><%= pin.user.name %></strong></p>
+<p class="description"><span class= "muted">Posted by: </span><strong><%= pin.user.name %></strong></p>
 
 	<% if current_user == pin.user %>
 		<p>

@@ -1,9 +1,9 @@
 <%= render "pages/home" %>
 
-<h1>Listing pins</h1> 
+<h2>User Images</h2> 
 
 <% if user_signed_in? %>
-	<%= link_to 'ADD NEW PIN', new_pin_path %>
+	<%= link_to 'ADD NEW IMAGE', new_pin_path, class:"btn btn-primary" %>
 <% end %>
 	<p><br/></p>
 <div id="pins">
